@@ -1,0 +1,27 @@
+
+1.Write a logic to reverse string of yourname.
+
+function reverseString(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    console.log(newString)
+    return newString;
+}
+reverseString('Prathamesh');
+
+2.Print Prime Number 2 TO 50.
+
+for (var counter =2; counter <= 50; counter++) {
+
+    var notPrime = false;
+    for (var i = 2; i <= counter; i++) {
+        if (counter%i===0 && i!==counter) {
+            notPrime = true;
+        }
+    }
+    if (notPrime === false) {
+                console.log(counter);
+    }
+}
